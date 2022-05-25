@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../icon/form.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/dashbord.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Dashboard</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="../js/dashboard.js"></script>
+</head>
+
+<body>
+
+  <main>
+
+    <header>
+      <div class="logo">
+        <a href="../index.html"><img src="../icon/logo.png" alt="Logo"></a>
+      </div>
+      <div>
+        <p class="title"><b>Dashboard</b></p>
+      </div>
+      <ul class="menu">
+        <li>
+          <a class="fechar" href="#">
+            <i class="fa fa-sign-out"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="container-dashboard">
+      <div class="sidenav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../view/dashboard.html"  class="menu-ativo">Dashboard</a></li>
+            <li><a href="../view/produto.html">Produtos</a></li>
+            <li><a href="../view/fornecedor.html">Fornecedores</a></li>
+            <li><a href="view/fale_conosco.html">Fale Conosco</a></li>
+            <li><a href="../view/quemsomos.html">Quem Somos</a></li>
+        </ul>
+      </div>
+
+      <div id="chart_div1" class="grafico"></div>
+      <div id="chart_div2" class="grafico"></div>
+      <div id="chart_div3" class="grafico" ></div>
+      <div id="chart_div4" class="grafico"></div>
+
+      <!-- TABELAS OPCIONAIS -->
+      <div class="item">
+        <h2>Todos os Produtos</h2>
+        <table id="tabela-estoque" class="tabela">
+          <tr>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Valor</th>
+            <th>Validade</th>
+            <th>Lote</th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="item">
+        <h2>Atenção - Baixas Vendas</h2>
+        <table id="tabela-atencao">
+          <tr>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Valor</th>
+            <th>Data</th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="footer">
+        <p>
+          Desenvolvido por Eduardo Henrique e Ivan Cardoso | &copy; 2022
+          <br>
+          <a href="mailto:dev@gmail.com">dev@gmail.com</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
